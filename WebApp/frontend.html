@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Travel Insight</title>
+
+<style>
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f2f5f9;
+    }
+
+    header {
+        background: #0077b6;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 900px;
+        margin: 30px auto;
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .section-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #023e8a;
+    }
+
+    label {
+        font-size: 16px;
+        margin-bottom: 5px;
+        display: block;
+        font-weight: bold;
+    }
+
+    select, input {
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        border: 1px solid #aaa;
+        font-size: 15px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+        background: #0096c7;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #023e8a;
+    }
+
+    .results {
+        margin-top: 25px;
+        padding: 20px;
+        border-radius: 10px;
+        background: #f8f9fa;
+        border: 1px solid #ddd;
+    }
+
+    .card {
+        padding: 15px;
+        background: white;
+        margin-top: 15px;
+        border-radius: 10px;
+        border-left: 6px solid #023e8a;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+        margin: 0;
+        color: #023e8a;
+        margin-bottom: 10px;
+    }
+
+    .flag-img {
+        width: 120px;
+        height: auto;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+
+</style>
+
+</head>
+<body>
+
+<header><h1>
+    🌍 Global Travel Insight
+    </h1>
+</header>
+
+<div class="container">
+
+    <h2 class="section-title">Select a Country</h2>
+
+    <label for="country">Choose Country:</label>
+    <select id="country">
+        <option>Sri Lanka</option>
+        <option>India</option>
+        <option>Japan</option>
+        <option>United States</option>
+        <option>Australia</option>
+    </select>
+
+    <button>Get Travel Information</button>
+
+    <div class="results">
+        <h2 class="section-title">Results</h2>
+
+        <div class="card">
+            <h3>Country Information</h3>
+            <p><strong>Population:</strong> -</p>
+            <p><strong>Region:</strong> -</p>
+            <p><strong>Currency:</strong> -</p>
+            <img src="" class="flag-img" alt="Country Flag">
+        </div>
+
+        <div class="card">
+            <h3>Weather Information</h3>
+            <p><strong>Temperature:</strong> -</p>
+            <p><strong>Humidity:</strong> -</p>
+            <p><strong>Condition:</strong> -</p>
+        </div>
+
+        <div class="card">
+            <h3>Travel Advisory</h3>
+            <p><strong>Safety Score:</strong> -</p>
+            <p><strong>Advisory:</strong> -</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
